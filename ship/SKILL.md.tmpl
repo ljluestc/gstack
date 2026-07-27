@@ -854,7 +854,7 @@ EOF
 **If neither CLI is available:**
 Print the branch name, remote URL, and instruct the user to create the PR/MR manually via the web UI. Do not stop — the code is pushed and ready.
 
-**Output the PR/MR URL** — then proceed to Step 20.
+**Output the PR/MR URL.** Then tell the user: "Your PR is ready — run `/land-and-deploy` to merge and deploy." Then proceed to Step 20.
 
 ---
 
@@ -897,4 +897,4 @@ This step is automatic — never skip it, never ask for confirmation.
 - **Use Greptile reply templates from greptile-triage.md.** Every reply includes evidence (inline diff, code references, re-rank suggestion). Never post vague replies.
 - **Never push without fresh verification evidence.** If code changed after Step 5 tests, re-run before pushing.
 - **Step 7 generates coverage tests.** They must pass before committing. Never commit failing tests.
-- **The goal is: user says `/ship`, next thing they see is the review + PR URL + auto-synced docs.**
+- **The goal is: user says `/ship`, next thing they see is the review + PR URL + a clear prompt to run `/land-and-deploy` next.**

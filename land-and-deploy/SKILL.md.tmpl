@@ -894,7 +894,7 @@ Write a JSONL entry with timing data:
 
 After the deploy report:
 
-If verdict is DEPLOYED AND VERIFIED: Tell the user "Your changes are live and verified. Nice ship."
+If verdict is DEPLOYED AND VERIFIED: Tell the user "Your changes are live and verified. Nice landing."
 
 If verdict is DEPLOYED (UNVERIFIED): Tell the user "Your changes are merged and should be deploying. I wasn't able to verify the site — check it manually when you get a chance."
 
@@ -903,7 +903,7 @@ If verdict is REVERTED: Tell the user "The merge was reverted. Your changes are 
 Then suggest relevant follow-ups:
 - If a production URL was verified: "Want extended monitoring? Run `/canary <url>` to watch the site for the next 10 minutes."
 - If performance data was collected: "Want a deeper performance analysis? Run `/benchmark <url>`."
-- "Need to update docs? Run `/document-release` to sync README, CHANGELOG, and other docs with what you just shipped."
+- "Need to update docs? Run `/document-release` to sync README, CHANGELOG, and other docs with what you just landed."
 
 ---
 
